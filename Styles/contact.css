@@ -1,0 +1,181 @@
+.content {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-gap:1em;
+	grid-template-areas: ". main . ." 
+}
+
+.writeUp {
+	grid-area:main;
+	margin-left:150px;
+	padding-bottom:50px;
+	padding-top:50px;
+}
+
+.form-control {
+	width:400px;
+	background:rgba(47,28,58,0.2);
+	border:1px solid gray;
+	outline:lightgray;
+	color:gray;
+	font-size:18px;
+	margin-bottom:16px;
+	padding:10px;
+	border-radius:50px;
+}
+
+input {
+	height:45px;
+}
+
+form .submit {
+	background-color: rgba(47,28,58,0.2);
+	border:0.5px solid gray;
+	outline:lightgray;
+	color:gray;
+	font-size:0.8em;
+	font-weight:600;
+	letter-spacing:1.5px;
+	height:40px;
+	margin-top:20px;
+	width:150px;
+	border-radius:30px;
+}
+
+form .submit:hover {
+	cursor:pointer;
+	background-color:rgba(96,8,62,0.8);
+	color:white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.upperLogo {
+		transform:scale(0.5);
+		padding:0;
+		margin-top:-20px;
+		margin-left:-50px;
+	}
+
+	.content {
+		grid-template-columns:1fr 1fr;
+		grid-template-rows:0.1fr 1fr;
+		grid-gap:1em;
+		grid-template-areas: 
+		"main main";
+		margin:10px;
+	}
+
+	.writeUp {
+		font-size:15px;
+		padding:0px;
+		margin-left:10px;
+	}
+	
+	h1 {
+		font-size:21px;
+		padding-bottom:50px;
+	}
+
+	.form-control {
+		width:250px;
+		font-size:15px;
+	}
+
+	input {
+		height:35px;
+	}
+
+	form .submit {
+		height:35px;
+		width:150px;
+	}
+
+	.footer{
+		margin-left:0px;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+	.content {
+		grid-template-columns:1fr 1fr;
+		grid-gap:1em;
+		grid-template-areas: 
+		"main main";
+		margin:10px;
+	}
+
+	.form-control {
+		width:250px;
+		font-size:15px;
+	}
+
+	input {
+		height:35px;
+	}
+
+	form .submit {
+		height:35px;
+		width:150px;
+	}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+
+	.content {
+		grid-template-columns:1fr 1fr;
+		grid-gap:1em;
+		grid-template-areas: 
+		"main main";
+		margin:10px;
+	}
+
+	.form-control {
+		width:300px;
+		font-size:15px;
+	}
+
+	input {
+		height:35px;
+	}
+
+	form .submit {
+		height:35px;
+		width:150px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1500px){
+
+	.form-control {
+		width:600px;
+		font-size:15px;
+	}
+
+	form .submit {
+		height:35px;
+		width:400px;
+	}
+
+	.upperLogo {
+		transform:scale(0.9);
+	}
+
+	nav{
+		font-size:21px;
+		height:50px;
+		border-radius:50px;
+	}
+   
+    .writeUp {
+    	font-size:25px;
+    }
+
+}

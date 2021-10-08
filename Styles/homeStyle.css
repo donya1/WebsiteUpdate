@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	overflow-x:hidden;
+}
+
+.content {
+	width:100vw;
+}
+
+.ConWrap {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.5fr 1fr;
+	grid-gap:4em;
+	grid-template-areas: 
+		"main main main main main"
+		"side con con con lang";
+}
+
+.banner {
+	font-family:"Open Sans";
+	width:100vw;
+	background: url("Images/bannerHomePage.jpg") no-repeat center;
+	background-size: 100%;
+	background-position: 0% 85%;
+	grid-area: main;
+	height:430px;
+	color:darkslategray;
+}
+
+/*.bannerTextBox {
+	position:relative;
+	top:0;
+	left:0;
+	height:200px;
+	width:100vw;
+	background-color:cadetblue;
+	opacity:0.5;
+
+}*/
+
+.banner h1{
+/*	position:absolute;*/
+	width:500px;
+/*	top:270px;
+	left:370px;*/
+	font-style:italic;
+	margin:20px;
+}
+
+.banner h2{
+/*	position:absolute;*/
+	width:700px;
+/*	top:330px;
+	left:370px;*/
+	margin:20px;
+}
+
+a {
+	text-decoration:none;
+}
+
+.TwitterFeed {
+	width:240px;
+	padding-top:30px;
+	grid-area:side;
+	margin-top:-50px;
+	margin-left:30px;
+}
+
+.twitter-timeline {
+	max-width:200px;
+	max-height:400px;
+}
+
+.intextTwitter {
+		display:none;
+}
+
+.langWrap {
+	font-family:freight-text-pro, serif;
+	font-weight:300;
+	font-size:1em;
+	cursor:pointer;
+	z-index:1;
+	grid-area:lang;
+	padding-top:4px;
+}
+
+#Eng {
+	border-right:1px solid rgb(109,13,112);
+	padding-right: 8px;
+}
+
+.langWrap a {
+	color:rgb(109,13,112);
+	padding:3px;
+}
+
+a.active {
+	font-weight:bold;
+}
+
+.writeUp {
+	font-family: freight-text-pro, serif;
+	line-height:1.5;
+	font-size:21px;
+	grid-area: con;
+	z-index:1;
+}
+
+.writeUp p{
+	padding-bottom:2%;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.ConWrap {
+		grid-template-columns:1fr 1fr 0.1fr;
+		grid-template-rows: 0.2fr 1fr;
+		grid-gap:0em;
+		grid-template-areas: 
+			"main main main"
+			"con con lang";
+	}
+
+	.langWrap{
+		padding-top:27px;
+		font-size:12px;
+	}
+
+	#Eng {
+		border:none;
+	}
+
+	.TwitterFeed {
+    	display:none;
+    }
+
+    .intextTwitter {
+    	display:block;
+    }
+
+	.upperLogo {
+		transform:scale(0.5);
+		padding:0;
+		margin-top:-20px;
+		margin-left:-50px;
+	}
+
+	.banner {
+		height:150px;
+	}
+
+	.banner h1 {
+		width:20%;
+		font-size:14px;
+		margin-top:20px;
+
+	}
+
+	.banner h2{
+		width:50%;
+		font-size:12px;
+		margin-top:30px;
+	}
+
+	.writeUp {
+    	margin:20px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:1000px){
+
+	.ConWrap {
+    	grid-template-columns: 1fr 1fr 0.1fr;
+    	grid-template-rows: 0.2fr 1fr;
+    	grid-gap: 0em;
+    	grid-template-areas:
+        "main main main"
+        "con con lang";
+    }
+
+	.langWrap{
+		padding-top:27px;
+		font-size:12px;
+	}
+
+	#Eng {
+		border:none;
+	}
+
+    .TwitterFeed {
+    	display:none;
+    }
+
+    .intextTwitter {
+    	display:block;
+    }
+
+    .banner h1 {
+    	margin-top:130px;
+    }
+
+    .banner h2 {
+    	margin-top:30px;
+    }
+
+    .writeUp {
+    	margin:20px;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+	.upperLogo {
+		transform:scale(0.9);
+	}
+
+	nav{
+		font-size:21px;
+		height:50px;
+		border-radius:50px;
+	}
+   
+    .writeUp {
+    	font-size:25px;
+    }
+
+}
+
+
+
+

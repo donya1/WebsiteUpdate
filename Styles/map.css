@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+
+.mapNav {
+	padding-top:50px;
+	width:100%;
+	height:600px;
+
+}
+
+.tableNav {
+	padding-top:50px;
+	width:100%;
+	height:840px;
+
+}
+
+.tabBar {
+	padding:1px;
+}
+
+
+.tabBar a{
+	text-decoration:none;
+	font-family:Open Sans;
+	font-size:18px;
+	background-color:lightgray;
+	padding:10px 90px 10px 90px;
+}
+
+.active {
+	font-style:bold;
+}
+
+.content {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:0.01fr 1fr;
+	grid-gap:1em;
+	grid-template-areas:
+		"cap cap cap cap"
+		"lang main main main";
+	width:100vw;
+}
+
+.lang {
+	font-family:freight-text-pro, serif;
+	font-weight:300;
+	font-size:1em;
+	cursor:pointer;
+	z-index:1;
+	grid-area:lang;
+	padding-top:25px;
+	padding-left:25px;
+	margin-top:50px;
+}
+
+#Eng {
+	border-right:1px solid rgb(109,13,112);
+	padding-right: 8px;
+}
+
+.lang a {
+	color:rgb(109,13,112);
+	padding:3px;
+	text-decoration:none;
+}
+
+a.active {
+	font-weight:bold;
+}
+
+/*.infographic {
+	grid-area:main;
+}*/
+
+.caption {
+	padding:10px;
+	grid-area:cap;
+}
+
+.infographic img {
+/*	transform:scale(0.25);*/
+	grid-area:main;
+	margin-left:-1250px;
+	margin-top:-230px;
+	margin-bottom:-210px;
+
+}
+
+h2 {
+	font-family:"Open Sans";
+	color:rgb(96,8,62);
+	font-size:1em;
+	font-style:italic;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-family:"Open Sans";
+	font-size:0.8em;
+	color:rgb(96,8,62);
+	text-transform:uppercase;
+	padding:20px 0px 10px 0px;
+
+}
+
+.writeUp {
+	font-family: freight-text-pro, serif;
+	line-height:1.5;
+	font-size:21px;
+	grid-area:main;
+	padding:30px 50px 30px 50px;
+	margin-top:50px;
+}
+
+.writeUp p {
+	padding-bottom:2%;
+}
+
+.writeUp a {
+	text-decoration:none;
+	color:rgb(96,8,62);
+	cursor:pointer;
+	font-style:italic;
+}
+
+.writeUp a:hover {
+	font-style:normal;
+}
+
+.infographic {
+	transform:scale(0.25); 
+	grid-area:main;
+  	margin-left:-1250px;
+  	margin-top:-230px;
+  	margin-bottom:-210px;
+ }
+
+#par5 {
+	font-style:italic;
+}
+
+.italics {
+	font-style:italic;
+}
+
+.span {
+	font-weight:400;
+}
+
+.authors {
+	font-size:0.8em;
+	text-transform:uppercase;
+	font-style:italic;
+	font-weight:700;
+	padding-bottom:0;
+	padding-top:3%;
+	line-height:1.3;
+}
+
+.date {
+	font-size:0.8em;
+	text-transform:uppercase;
+	padding-bottom:4%;
+}
+
+.notes {
+	font-size:0.6em;
+	padding-bottom:1%;
+}
+
+.jouTit {
+	font-style:italic;
+}
+
+.bibliography {
+    margin-left: 40px;
+    text-indent: -40px;
+    display:none;
+
+}
+
+.bibliography p{
+	padding-bottom:2%;
+	font-size:0.8em;
+}
+
+.biblioExpand {
+	width:20px;
+	height:20px;
+	margin-left:20px;
+}
+
+
+@media only screen and (max-width:600px){
+	.content {
+		grid-template-columns:1fr 1fr 1fr 1fr 0.01fr;
+		grid-template-rows:0.01fr 0.01fr 1fr;
+		grid-template-areas:
+		"cap cap cap cap cap"
+		". . . lang lang"
+		"main main main main main";
+	}
+
+	.writeUp{
+		padding:20px 0px 0px 20px;
+	}
+
+	.tabBar a {
+		padding:10px 5px 10px 5px;
+		font-size:12px;
+	}
+
+	.infographic{
+		display:none;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1000px){
+	.content {
+		grid-template-columns:1fr 1fr 1fr 1fr 0.01fr;
+		grid-template-rows:0.01fr 0.01fr 1fr;
+		grid-template-areas:
+		"cap cap cap cap cap"
+		". . . lang lang"
+		"main main main main main";
+	}
+
+	.writeUp{
+		padding:20px 0px 0px 20px;
+	}
+
+	.tabBar a {
+		padding:10px 20px 10px 20px;
+	}
+
+	.infographic{
+		display:none;
+	}
+
+}
+
+
+@media only screen and (min-width: 1500px) {
+
+	.upperLogo {
+		transform:scale(0.9);
+	}
+
+	nav{
+		font-size:21px;
+		height:50px;
+		border-radius:50px;
+	}
+   
+    .writeUp {
+    	font-size:25px;
+    }
+
+}

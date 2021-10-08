@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+	font-family:Open Sans;
+}
+
+.dataTables_wrapper {
+	top:50px;
+}
+
+.dataTables_length{
+	display:none;
+}
+
+tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+
+ .hidden {
+	display:none;
+	background-color:#DCDCDC;
+}
+
+td {
+	text-align:center;
+}
+
+.left {
+	text-align:left;
+}
+
+.view{
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+
+a {
+	text-decoration:underline;
+	cursor:pointer;
+	color: rgba(96,8,62);
+
+}
+
+@media only screen and (max-width:600px) {
+	.content {
+		margin-top:750px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width:1000px) {
+	.content {
+		margin-top:460px;
+	}
+
+	.tableNav {
+		padding:20px;
+	}
+}
