@@ -4,6 +4,20 @@ body {
 	font-family:Open Sans;
 }
 
+.caption {
+	grid-area:cap;
+	margin-top:30px;
+	margin-left:-11px;
+}
+
+.lang {
+	margin-top:10px;
+}
+
+.writeUp {
+	margin-top:0px;
+}
+
 .dataTables_wrapper {
 	top:50px;
 }
