@@ -66,6 +66,7 @@ body{
 
 a {
 	text-decoration:none;
+	color:darkslategray;
 }
 
 .TwitterFeed {
@@ -125,7 +126,7 @@ a.active {
 
 	.ConWrap {
 		grid-template-columns:1fr 1fr 0.1fr;
-		grid-template-rows: 0.2fr 1fr;
+		grid-template-rows: 0.3fr 1fr;
 		grid-gap:0em;
 		grid-template-areas: 
 			"main main main"
@@ -157,7 +158,8 @@ a.active {
 	}
 
 	.banner {
-		height:150px;
+		background-size:240%;
+		height:290px;
 	}
 
 	.banner h1 {
@@ -170,7 +172,7 @@ a.active {
 	.banner h2{
 		width:50%;
 		font-size:12px;
-		margin-top:30px;
+		margin-top:20px;
 	}
 
 	.writeUp {
@@ -185,7 +187,7 @@ a.active {
 
 	.ConWrap {
     	grid-template-columns: 1fr 1fr 0.1fr;
-    	grid-template-rows: 0.2fr 1fr;
+    	grid-template-rows: 0.8fr 1fr;
     	grid-gap: 0em;
     	grid-template-areas:
         "main main main"
@@ -209,13 +211,18 @@ a.active {
     	display:block;
     }
 
-    .banner h1 {
-    	margin-top:130px;
+    .banner{
+    	background-size:180%;
+    	height:520px;
     }
 
-    .banner h2 {
-    	margin-top:30px;
-    }
+/*    .banner h1 {
+    	margin-top:100px;	
+    }*/
+
+/*    .banner h2 {
+    	margin-top:20px;
+    }*/
 
     .writeUp {
     	margin:20px;

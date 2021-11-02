@@ -1,0 +1,82 @@
+body{
+	overflow-x:hidden;
+}
+
+
+.content {
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-gap:1em;
+	grid-template-areas: 
+		". main main .";
+}
+
+.writeUp {
+	font-family: freight-text-pro, serif;
+	line-height:1.5;
+	font-size:21px;
+	grid-area:main;
+	padding-top:50px;
+	margin-left:60px;
+}
+
+.writeUp p{
+	padding-bottom:2%;
+}
+
+
+p a{
+	color:rgb(96,8,62);
+}
+
+
+.writeUp {
+	font-family: freight-text-pro, serif;
+	line-height:1.5;
+	font-size:21px;
+	grid-area:main;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+	.content {
+    	grid-template-columns: 1fr 1fr 0.1fr;
+    	grid-gap: 0em;
+    	grid-template-areas:
+        "main main main";
+    }
+/*
+    .upperLogo {
+		transform:scale(0.5);
+		padding:0;
+		margin-top:-20px;
+		margin-left:-50px;
+	}*/
+
+    .writeUp{
+    	margin:20px;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+
+	.upperLogo {
+		transform:scale(0.9);
+	}
+
+	nav{
+		font-size:21px;
+		height:50px;
+		border-radius:50px;
+	}
+   
+    .writeUp {
+    	font-size:25px;
+    }
+
+}
