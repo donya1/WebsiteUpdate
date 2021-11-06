@@ -18,9 +18,9 @@ $(document).ready(function() {
         var title = $(this).text();
         $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
     } );
- 
+
     // DataTable
-    var table = $('#example').DataTable({
+    var table = $('#example').DataTable({ 
         initComplete: function () {
             // Apply the search
             this.api().columns().every( function () {
